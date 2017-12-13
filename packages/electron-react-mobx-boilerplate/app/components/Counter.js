@@ -8,8 +8,7 @@ import styles from './Counter.css';
 @observer
 class Counter extends Component {
   render() {
-    console.log(this.props)
-    const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props.counter;
+    const { increment, incrementIfOdd, incrementAsync, decrement, count } = this.props.counter;
     return (
       <div>
         <div className={styles.backButton} data-tid="backButton">
@@ -18,7 +17,7 @@ class Counter extends Component {
           </Link>
         </div>
         <div className={`counter ${styles.counter}`} data-tid="counter">
-          {counter}
+          {count}
         </div>
         <div className={styles.btnGroup}>
           <button className={styles.btn} onClick={increment} data-tclass="btn">

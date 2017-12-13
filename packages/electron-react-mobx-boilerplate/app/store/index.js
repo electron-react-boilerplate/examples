@@ -1,10 +1,9 @@
-import { createHashHistory } from 'history';
 import { observable, action, runInAction } from 'mobx';
 
-class RootStore {
+class Store {
   constructor() {
     this.uiStore = new UIStore(this);
-    this.couter = new Counter(this);
+    this.counter = new Counter(this);
   }
 }
 
@@ -51,7 +50,6 @@ class Counter {
   }
 }
 
-const rootStore = new RootStore();
-const history = createHashHistory();
+const store = new Store();
 
-export { rootStore, history };
+export default store;

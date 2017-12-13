@@ -5,7 +5,7 @@ import { RouterStore, syncHistoryWithStore } from 'mobx-react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from '../routes';
 
-export default function Root({ store, history }: RootType) {
+export default function Root({ store }) {
   return (
     <Provider {...store}>
       <BrowserRouter>
