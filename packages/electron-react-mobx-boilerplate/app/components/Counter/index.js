@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { inject, observer } from 'mobx-react';
-import styles from './Counter.css';
+import styles from './style.css';
 
 @inject(root => ({ counter: root.counter }))
 @observer
