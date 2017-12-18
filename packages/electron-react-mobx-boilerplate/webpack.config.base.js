@@ -38,6 +38,15 @@ export default {
       path.join(__dirname, 'app'),
       'node_modules',
     ],
+    alias: {
+      stylesheets: path.join(__dirname, 'app/stylesheets'),
+      components: path.join(__dirname, 'app/components'),
+      containers: path.join(__dirname, 'app/containers'),
+      constants: path.join(__dirname, 'app/constants'),
+      utils: path.join(__dirname, 'app/utils'),
+      stores: path.join(__dirname, 'app/stores'),
+      images: path.join(__dirname, 'app/images')
+    }
   },
 
   plugins: [
