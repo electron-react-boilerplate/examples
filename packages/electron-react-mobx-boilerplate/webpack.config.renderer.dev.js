@@ -141,6 +141,45 @@ export default merge.smart(baseConfig, {
           }
         ]
       },
+      // // Add stylus support  - compile all .global.styl files and pipe it to style.css
+      // {
+      //   test: /\.global\.styl$/,
+      //   use: [
+      //     {
+      //       loader: 'style-loader'
+      //     },
+      //     {
+      //       loader: 'css-loader',
+      //       options: {
+      //         sourceMap: true,
+      //       },
+      //     },
+      //     {
+      //       loader: 'stylus-loader'
+      //     }
+      //   ]
+      // },
+      // // Add stylus support  - compile all other .styl files and pipe it to style.css
+      // {
+      //   test: /^((?!\.global).)*\.styl$/,
+      //   use: [
+      //     {
+      //       loader: 'style-loader'
+      //     },
+      //     {
+      //       loader: 'css-loader',
+      //       options: {
+      //         modules: true,
+      //         sourceMap: true,
+      //         importLoaders: 1,
+      //         localIdentName: '[name]__[local]__[hash:base64:5]',
+      //       }
+      //     },
+      //     {
+      //       loader: 'stylus-loader'
+      //     }
+      //   ]
+      // },
       // WOFF Font
       {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,

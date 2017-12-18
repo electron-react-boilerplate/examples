@@ -82,6 +82,38 @@ export default merge.smart(baseConfig, {
           }]
         }),
       },
+      // Add stylus support  - compile all .global.scss files and pipe it to style.css
+      {
+        test: /\.global\.styl$/,
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'stylus-loader'
+            }
+          ],
+          fallback: 'stylus-loader',
+        })
+      },
+      // Add stylus support  - compile all other .scss files and pipe it to style.css
+      {
+        test: /^((?!\.global).)*\.styl$/,
+        use: ExtractTextPlugin.extract({
+          use: [{
+            loader: 'css-loader',
+            options: {
+              modules: true,
+              importLoaders: 1,
+              localIdentName: '[name]__[local]__[hash:base64:5]',
+            }
+          },
+          {
+            loader: 'stylus-loader'
+          }]
+        }),
+      },
       // WOFF Font
       {
         test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
