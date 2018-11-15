@@ -7,6 +7,9 @@
   "workspaces": [
     "examples/*"
   ],
+  "scripts": {
+    "test": "lerna run test-all"
+  },
   "devDependencies": {
     "husky": "^1.0.0-rc.15",
     "lerna": "^3.4.0",
