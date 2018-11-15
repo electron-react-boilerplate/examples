@@ -273,7 +273,7 @@
     "sqlite3": "^4.0.4"
   },
   "engines": {
-    "node": ">=10.x <11",
+    "node": ">=10.x",
     "yarn": ">=1.x"
   },
   "collective": {

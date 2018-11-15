@@ -52,6 +52,7 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export CXX="g++-8"; fi
 
 install:
+  - npm i -g yarn@latest
   - yarn
   # On Linux, initialize "virtual display". See before_script
   - |
@@ -75,10 +76,4 @@ before_script:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sleep 3; fi
 
 script:
-  - yarn package-ci
-  - yarn lint
-  - yarn flow
-  # HACK: Temporarily ignore `yarn test` on linux
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then yarn test; fi
-  - yarn build-e2e
-  - yarn test-e2e
+  - yarn test

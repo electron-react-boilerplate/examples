@@ -47,9 +47,11 @@
       {
         "order": [
           "type-annotations",
+          "instance-variables",
+          "instance-methods",
           "static-methods",
-          "lifecycle",
           "everything-else",
+          "lifecycle",
           "render"
         ]
       }

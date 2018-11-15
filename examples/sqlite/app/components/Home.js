@@ -2,12 +2,9 @@
 /* eslint no-plusplus: off */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import sqlite from 'sqlite3';
 import routes from '../constants/routes';
 import styles from './Home.css';
-
-const sqlite3 = require('sqlite3').verbose();
-
-const db = new sqlite3.Database(':memory:');
 
 type Props = {};
 type State = {
@@ -17,15 +14,20 @@ type State = {
 export default class Home extends Component<Props, State> {
   props: Props;
 
+  sqlite: sqlite;
+
   state: State = {
     results: []
   };
 
   componentDidMount() {
-    db.serialize(() => {
-      db.run('CREATE TABLE lorem (info TEXT)');
+    const sqlite3 = sqlite.verbose();
+    this.db = new sqlite3.Database(':memory:');
 
-      const stmt = db.prepare('INSERT INTO lorem VALUES (?)');
+    this.db.serialize(() => {
+      this.db.run('CREATE TABLE lorem (info TEXT)');
+
+      const stmt = this.db.prepare('INSERT INTO lorem VALUES (?)');
       for (let i = 0; i < 10; i++) {
         stmt.run(`Ipsum ${i}`);
       }
@@ -33,7 +35,7 @@ export default class Home extends Component<Props, State> {
 
       const results = [];
 
-      db.each('SELECT rowid AS id, info FROM lorem', (err, row) => {
+      this.db.each('SELECT rowid AS id, info FROM lorem', (err, row) => {
         console.log(`${row.id}: ${row.info}`);
         results.push(`${row.id}: ${row.info}`);
         this.setState({
@@ -41,8 +43,10 @@ export default class Home extends Component<Props, State> {
         });
       });
     });
+  }
 
-    db.close();
+  componentWillUnmount() {
+    this.db.close();
   }
 
   render() {
@@ -52,7 +56,7 @@ export default class Home extends Component<Props, State> {
         <h2>Home</h2>
         <Link to={routes.COUNTER}>to Counter</Link>
         {results.map(result => (
-          <h4>{result}</h4>
+          <h4 key={result}>{result}</h4>
         ))}
       </div>
     );
