@@ -1,16 +1,12 @@
 {
-  "private": true,
   "name": "@electron-react-boilerplate/examples",
   "license": "MIT",
   "repository": "https://github.com/electron-react-boilerplate/examples.git",
   "version": "0.1.0",
-  "workspaces": {
-    "packages": "packages/*",
-    "nohoist": "**/*"
-  },
-  "scripts": {
-    "precommit": "lerna run precommit"
-  },
+  "private": true,
+  "workspaces": [
+    "examples/*"
+  ],
   "devDependencies": {
     "husky": "^1.0.0-rc.15",
     "lerna": "^3.4.0",

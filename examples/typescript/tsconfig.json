@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "jsx": "preserve",
+    "target": "ES6",
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "strict": true,
+    "allowJs": true,
+    "pretty": true,
+    // "sourceMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "app/node_modules"
+  ],
+  "externalTranspiler": {
+    "name": "babel",
+    "options": {
+      "presets": [
+        ["env", {
+          "targets": { "node": 6 },
+          "useBuiltIns": true
+        }],
+        "stage-0",
+        "react"
+      ],
+      "plugins": ["add-module-exports", "dynamic-import-webpack"],
+      "env": {
+        "production": {
+          "presets": ["react-optimize"],
+          "plugins": ["babel-plugin-dev-expression"]
+        },
+        "development": {
+          "plugins": [
+            "transform-class-properties",
+            "transform-es2015-classes",
+            "react-hot-loader/babel"
+          ]
+        }
+      }
+    }
+  }
+}
