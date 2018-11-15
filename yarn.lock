@@ -14744,14 +14744,10 @@ yargs@^7.0.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
-yarn@^1.10.1:
+yarn@^1.10.1, yarn@^1.12.3:
   version "1.12.3"
   resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.12.3.tgz#fb4599bf1f8da01552bcc7e1571dfd4e53788203"
   integrity sha512-8f5rWNDvkhAmCxmn8C0LsNWMxTYVk4VGKiq0sIB6HGZjaZTHsGIH87SUmVDUEd2Wk54bqKoUlbVWgQFCQhRkVw==
-
-yarn@^1.9.4:
-  version "1.9.4"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.9.4.tgz#3b82d8446b652775723900b470d966861976924b"
 
 yauzl@2.4.1:
   version "2.4.1"

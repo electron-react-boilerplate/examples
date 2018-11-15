@@ -52,8 +52,8 @@ before_install:
   - if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then export CXX="g++-8"; fi
 
 install:
-  - npm i -g yarn@latest
-  - yarn
+  - npm i -g yarn@latest lerna@latest
+  - lerna bootstrap
   # On Linux, initialize "virtual display". See before_script
   - |
     if [ "$TRAVIS_OS_NAME" == "linux" ]; then
