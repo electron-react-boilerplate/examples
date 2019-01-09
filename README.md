@@ -7,6 +7,7 @@
 |  | Example | Descrption |
 | --- | --- | --- |
 | 1.|  [sqlite](https://github.com/electron-react-boilerplate/examples/tree/master/examples/sqlite) | Bundling and using SQLite with ERB |
+| 2.|  [typescript](https://github.com/electron-react-boilerplate/examples/tree/master/examples/typescript) | Type checking with TS with React support |
 
 
 ## Setup
