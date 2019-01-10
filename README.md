@@ -14,10 +14,6 @@
 Mobx
 * [electron-react-mobx-boilerplate](https://github.com/gzgogo/electron-react-mobx-boilerplate)
 
-TypeScript
-* [erb-typescript-example](https://github.com/amilajack/erb-typescript-example)
-* [electron-react-typescript-boilerplate](https://github.com/ManuKle/electron-react-typescript-boilerplate)
-
 CSS
 * [Ant Design example](https://github.com/amilajack/erb-ant-design-example)
 * [Bootstrap example](https://github.com/amilajack/erb-bootstrap-example)
