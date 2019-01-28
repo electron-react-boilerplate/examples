@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "private": true,
   "workspaces": [
-    "examples/*"
+    "./*"
   ],
   "scripts": {
     "test": "lerna run test-all"
