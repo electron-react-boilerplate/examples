@@ -11,6 +11,9 @@
 
 ## Notable Forks
 
+Second Renderer Window
+* [erb-second-renderer-window-example](https://github.com/amilajack/erb-second-renderer-window-example)
+
 Mobx
 * [electron-react-mobx-boilerplate](https://github.com/gzgogo/electron-react-mobx-boilerplate)
 
