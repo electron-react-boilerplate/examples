@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import sqlite from 'sqlite3';
-import routes from '../constants/routes';
+import routes from '../constants/routes.json';
 import styles from './Home.css';
 
 type Props = {};

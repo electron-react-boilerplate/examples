@@ -15,5 +15,10 @@
     "lerna": "^3.16.4",
     "lint-staged": "^8.2.1",
     "yarn": "^1.17.3"
-  }
+  },
+  "renovate": {
+    "extends": [
+      "bliss"
+    ]
+  }  
 }

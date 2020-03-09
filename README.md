@@ -7,7 +7,6 @@
 |  | Example | Descrption |
 | --- | --- | --- |
 | 1.|  [sqlite](https://github.com/electron-react-boilerplate/examples/tree/master/examples/sqlite) | Bundling and using SQLite with ERB |
-| 2.|  [typescript](https://github.com/electron-react-boilerplate/examples/tree/master/examples/typescript) | Type checking with TS with React support |
 
 ## Notable Forks
 
@@ -32,7 +31,6 @@ Miscellaneous Example
 * [html video example](https://github.com/amilajack/erb-video-example)
 * [importing audio files example](https://github.com/amilajack/erb-audio-example)
 * [reading local files at runtime in dev and prod env](https://github.com/amilajack/erb-local-fs-read-example)
-
 
 ## Setup
 
