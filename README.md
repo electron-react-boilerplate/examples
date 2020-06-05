@@ -31,6 +31,7 @@ Miscellaneous Example
 * [html video example](https://github.com/amilajack/erb-video-example)
 * [importing audio files example](https://github.com/amilajack/erb-audio-example)
 * [reading local files at runtime in dev and prod env](https://github.com/amilajack/erb-local-fs-read-example)
+* [menubar application example](https://github.com/3on/electron-react-boilerplate-menubar)
 
 ## Setup
 
