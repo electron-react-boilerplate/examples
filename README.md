@@ -16,7 +16,8 @@ Second Renderer Window
 Mobx
 * [electron-react-mobx-boilerplate](https://github.com/gzgogo/electron-react-mobx-boilerplate)
 
-CSS
+CSS and Styling
+* [Tailwind example](https://github.com/amilajack/erb-tailwind-example)
 * [Ant Design example](https://github.com/amilajack/erb-ant-design-example)
 * [Bootstrap example](https://github.com/amilajack/erb-bootstrap-example)
 
