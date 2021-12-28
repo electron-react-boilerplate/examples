@@ -1,7 +1,5 @@
 # Electron React Boilerplate Examples
 
-[![Build Status](https://travis-ci.com/electron-react-boilerplate/examples.svg?branch=master)](https://travis-ci.com/electron-react-boilerplate/examples)
-
 ## Table of Contents
 
 |  | Example | Descrption |
@@ -22,7 +20,8 @@ CSS and Styling
 * [Bootstrap example](https://github.com/amilajack/erb-bootstrap-example)
 
 Native Modules Example
-* [sqlite example](https://github.com/amilajack/erb-sqlite-example)
+* [sqlite3 example](https://github.com/amilajack/erb-sqlite-example)
+* [better-sqlite3 example](https://github.com/amilajack/erb-better-sqlite3-example)
 * [serialport example](https://github.com/amilajack/erb-serialport-example)
 
 Miscellaneous Example
